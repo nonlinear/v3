@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, .title {
 
 
 
-.next, .previous {
+.next, .previous, .soon {
   &:after {
     font-size: map-get($font-size, sig);
     margin-left: 5px;
@@ -158,6 +158,13 @@ h1, h2, h3, h4, h5, .title {
 
 .next:after {
   content: "next";
+}
+.soon {
+  @include disable(link);
+  @include opacity(40);
+  &:after {
+  content: "soon";
+}
 }
 .previous:after {
   content: "previous";
@@ -198,4 +205,39 @@ h1, h2, h3, h4, h5, .title {
   &.down {
     bottom: 0;
   }
+}
+
+$about: 120px;
+.team {
+  @include clearfix;
+a {
+  width: $about;
+  height: $about;
+  display: inline-block;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  border: none !important;
+  @include transition;
+        &:not(:hover) {
+       filter: grayscale(100%);
+       @include opacity(90);
+    }
+span {
+  color: map-get($color, bg);
+  background-color: map-get($color, brand);
+  padding: 3px 5px;
+  @include opacity(0);
+  @include transition;
+  font-size: map-get($font-size, sig);
+}
+  &:hover {
+    border: none !important;
+    width: ($about * 1.5);
+   span {
+     @include opacity(100);
+   }
+
+  }
+}
 }

@@ -4,7 +4,7 @@ layout: default
 <section class="description">
 <a href="#">
    <ul class="title">
-   <li><span>Decolonize</span></li>
+ <span>Decolonize</span></li>
    <li><span>Your</span></li>
    <li><span>Attention</span></li>
  </ul>
@@ -37,7 +37,11 @@ layout: default
     <span class="description">Short design exercises to distill recommendations with people affected by the topic.</span>
   </a>
   <div id="discovery" class="collapse" data-parent="#accordion">
-Pending
+  {% for post in site.categories.discovery %}
+    {% if post.url %}
+    <li><a class="{{ post.status }}" href="{{ post.url }}">{{ post.title }}</a><p>{{ post.description }}</p></li>
+    {% endif %}
+  {% endfor %}
   </div>
 </div>
 <div class="panel">
@@ -46,8 +50,13 @@ Pending
     <span class="description">Evade the algorithm rat-race of surveillance capitalism with community-owned communication tools.</span>
   </a>
   <div id="tools" class="collapse" data-parent="#accordion">
-  <ul><li><a href="/tools/signal">Signal</a><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, natus!</p></li><li><a href="/tools/mastodon">Mastodon</a><p>Natus minima laudantium amet illo? Iste tenetur facilis, molestiae totam.</p></li><li><a href="/tools/scuttlebutt">Scuttlebutt</a><p>Iste inventore commodi in voluptates odit reiciendis natus distinctio consectetur!</p></li><li><a href="/tools/mesh">Mesh Networks</a><p>Odio eligendi ipsum odit corporis quis quasi quas voluptates quam.</p></li></ul>
-
+<ul>
+      {% for post in site.categories.tools %}
+    {% if post.url %}
+    <li><a class="{{ post.status }}" href="{{ post.url }}">{{ post.title }}</a><p>{{ post.description }}</p></li>
+    {% endif %}
+  {% endfor %}
+</ul>
   </div>
 </div>
 
@@ -57,8 +66,13 @@ Pending
 <span class="description">We're a group of queer people gathering to understand challenges and opportunities of our digital society.</span>
   </a>
   <div id="about" class="collapse" data-parent="#accordion">
-   Pending
-
+  <div class="team">
+  {% for post in site.categories.about %}
+    {% if post.url %}
+  <a style="background-image: url(/assets/images/about/{{ post.slug }}.{{ post.type }})" target="about" href="{{ post.link }}"><span>{{ post.title }}</span></a>
+    {% endif %}
+  {% endfor %}
+</div>
   </div>
 </div>
 <div class="panel">
