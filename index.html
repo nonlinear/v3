@@ -2,11 +2,13 @@
 layout: default
 ---
 <section class="description">
- <ul class="title">
+<a href="#">
+   <ul class="title">
    <li><span>Decolonize</span></li>
    <li><span>Your</span></li>
    <li><span>Attention</span></li>
  </ul>
+</a>
 </section>
 
 <div id="accordion" class="panel-group">
@@ -18,7 +20,13 @@ layout: default
       <span class="description">We need to get educated: A bottom-up way to find understanding of the seminal issues that shape our future.</span>
     </a>
     <div id="study" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-<ul><li><a class="next" href="/study/nomadism">#nomadism</a><p>Evading the state</p></li><li><a class="previous" href="/study/hyperreal">#hyperreal</a><p>Thriving in a heavily mediated society</p></li><li><a class="previous" href="/study/queerfam">#queerfam</a><p>New Configurations of Family: Towards Non-oppressive Relationships of Love and Care</p></li></ul>
+<ul>
+  {% for post in site.categories.study %}
+    {% if post.url %}
+    <li><a class="{{ post.status }}" href="{{ post.url }}">{{ post.title }}</a><p>{{ post.description }}</p></li>
+    {% endif %}
+  {% endfor %}
+</ul>
     </div>
   </div>
   <div class="panel">
