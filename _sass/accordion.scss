@@ -5,11 +5,14 @@
 .panel {
   @include reset(all);
   @include reset(shadow);
-  &:hover, &.opened {
+  &:hover {
     .collapse-trigger .description {
       height: 50px;
     }
   }
+      .collapse-trigger[aria-expanded="true"] .description {
+      height: 50px;
+    }
   .collapse-trigger {
     border-top: solid 5px map-get($color, fg);
     display: block;
@@ -63,8 +66,5 @@
   .collapse {
      margin-bottom: 20px;
       background-color: map-get($color, bg);
-
-
-
 }
 }
