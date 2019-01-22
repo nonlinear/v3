@@ -1,0 +1,65 @@
+.allure {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  @extend .container;
+    border-right: solid 30px map-get($color, bg);
+  // max-width: $allure;
+  // @media screen and (max-width: $allure) {
+  //   width: 100%;
+  //   max-width: 100%;
+  //   margin: 0 30px;
+  // }
+  top: 0;
+  z-index: -1;
+   background: rgba(0, 0, 0, 0) linear-gradient(-45deg, black, map-get($color, brand));
+   &:before, &:after {
+    content: "";
+height: 100%;
+margin: 0 -15px;
+    display: block;
+   }
+   &:before {
+background: rgba(0, 0, 0, 0) linear-gradient(-45deg, map-get($color, brand), lighten(map-get($color, brand), 20%));
+animation: hide-and-seek  1s linear infinite alternate;
+
+   }
+}
+
+.container.all {
+     background-image: url(../../assets/images/icon-bg.svg);
+    background-size: $pattern $pattern;
+    background-position: 0 $margin;
+    background-attachment: fixed;
+}
+
+@keyframes hide-and-seek {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+.border {
+      &:before, &:after {
+    background-color: map-get($color, bg);
+    content: "";
+    display: block;
+    height: $margin + 2;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+  }
+    &:before {
+    top: 0;
+
+  }
+  &:after {
+    bottom: 0;
+
+  }
+}
