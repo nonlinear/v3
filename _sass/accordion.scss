@@ -1,22 +1,18 @@
-.panel-group {
-  background-color: rgba(map-get($color, bg), .4);
-  margin-bottom: 45px;
-}
+
 .panel {
   @include reset(all);
   @include reset(shadow);
   &:hover {
     .collapse-trigger .description {
-      height: 50px;
+      height: map-get($size, collapse);
     }
   }
       .collapse-trigger[aria-expanded="true"] .description {
-      height: 50px;
+      height: map-get($size, collapse);
     }
   .collapse-trigger {
     border-top: solid 5px map-get($color, fg);
     display: block;
-    margin: 10px 0 !important;
     &:before {
       content: "";
       display: block;
@@ -27,27 +23,26 @@
     }
     .description {
       display: block;
-      color: map-get($color, fg);
-      background-color: map-get($color, bg);
-      line-height: 130%;
       height: 0;
       overflow: hidden;
       @include transition;
+      p {
+        @include highlight;
+              color: map-get($color, fg);
+      line-height: 130%;
+      }
     }
     &:hover {
       text-decoration: none;
     }
     .title {
       display: inline-block;
-
       background-color: map-get($color, bg);
+      padding: 3px 10px 5px 0 !important;
       li {
         display: inline;
-        color: map-get($color, fg);
         font-size: map-get($font-size, subtitle);
-        &:nth-of-type(2n) {
-          color: map-get($color, brand);
-        }
+       @include zebra;
       }
     }
   }

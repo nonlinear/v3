@@ -1,43 +1,45 @@
 body {
   font-family: map-get($font, text);
-  margin: $margin 0;
+  margin: map-get($size, margin) 0;
   background-color: map-get($color, bg);
 }
 
+.slogan {
+
+    font-size: map-get($font-size, title);
+    line-height: map-get($font-size, titleLine);
+    margin-bottom: (map-get($size, margin) * 2) !important;
+  li {
+@include highlight;
+@include zebra;
+
+}
+}
 article.article {
 
-    section {
-    background-color: rgba(map-get($color, bg), .4);
-       margin-bottom: $margin;
-  }
+
   section, header.header {
     h1, h2, h3, h4, p, li {
-      background-color: map-get($color, bg);
-      display: inline;
-      padding: 5px 0;
-      &:after {
-        content: "";
-        display: block;
-      }
+@include highlight;
     }
     .meeting {
       font-family: map-get($font, mono);
     }
   }
-    header.header {
+  header.header {
     h1 {
-    font-size: map-get($font-size, title);
-
-  }
-  h1, p {
-    margin-bottom: 0;
-
-  }
-  p:after {
-      height: $margin;
-    }
+      font-size: map-get($font-size, title);
 
     }
+    h1, p {
+      margin-bottom: 0;
+
+    }
+    p:after {
+      height: map-get($size, margin);
+    }
+
+  }
 }
 
 .word {
@@ -45,43 +47,32 @@ article.article {
 }
 
 .container {
-  max-width: $container;
+  max-width: map-get($size, container);
 }
 
-.title {
-  li {
-    span {
-      background-color: #fff;
-      displaY: inline-block;
-    }
-    &:nth-of-type(2n) {
-      color: map-get($color, brand);
-    }
-  }
-}
 
 aside {
  height:  100vh;
  .title a.logo {
-  color: map-get($color, fg);
   display: inline-block;
-  margin-bottom: $margin;
+  margin-bottom: (map-get($size, margin) * 2);
   @include transition;
-  &:hover {
-    color: map-get($color, brand);
-    span {
-      color: map-get($color, fg);
-    }
-  }
-  div {
-    background-color: map-get($color, bg);
-    display: inline-block;
-  }
-
+  color: map-get($color, fg);
+div {
+  @include highlight;
+}
   span {
     color: map-get($color, brand);
-    @include transition;
-  }
+  @include transition;
+}
+&:hover {
+  text-decoration: none;
+   color: map-get($color, brand);
+
+  span {
+    color: map-get($color, fg);
+}
+}
 }
 footer.footer {
   font-size: map-get($font-size, sig);
@@ -100,21 +91,16 @@ ul, ol {
   @include reset(all);
   @include reset(list);
 }
-section.description {
-  p {
-    margin-bottom: $margin;
-  }
-}
 
-.description, aside {
+
+aside {
   .title {
     font-size: map-get($font-size, title);
-    line-height: 55px;
-    padding-bottom: 12px !important;
+    line-height: map-get($font-size, titleLine);
   }
-  p {
-    background-color: map-get($color, bg);
-  }
+p {
+  @include highlight;
+}
 }
 
 aside {
@@ -129,9 +115,9 @@ a:not(.collapse-trigger):not(.logo) {
   border-bottom: dotted 1px map-get($color, brand);
   &:hover {
     color: map-get($color, fg);
-      border-bottom: dotted 2px map-get($color, fg);
+    border-bottom: dotted 2px map-get($color, fg);
 
-  text-decoration: none;
+    text-decoration: none;
   }
 
 }
@@ -163,8 +149,8 @@ h1, h2, h3, h4, h5, .title {
   @include disable(link);
   @include opacity(40);
   &:after {
-  content: "soon";
-}
+    content: "soon";
+  }
 }
 .previous:after {
   content: "previous";
@@ -190,7 +176,7 @@ h1, h2, h3, h4, h5, .title {
   content: "";
   display: block;
   position: fixed;
-  height: $margin;
+  height: map-get($size, margin);
   width: 100%;
   z-index: 100;
   .row *:before {
@@ -210,34 +196,34 @@ h1, h2, h3, h4, h5, .title {
 $about: 120px;
 .team {
   @include clearfix;
-a {
-  width: $about;
-  height: $about;
-  display: inline-block;
-  float: left;
-  background-size: cover;
-  background-position: center center;
-  border: none !important;
-  @include transition;
-        &:not(:hover) {
-       filter: grayscale(100%);
-       @include opacity(90);
-    }
-span {
-  color: map-get($color, bg);
-  background-color: map-get($color, brand);
-  padding: 3px 5px;
-  @include opacity(0);
-  @include transition;
-  font-size: map-get($font-size, sig);
-}
+  a {
+    width: $about;
+    height: $about;
+    display: inline-block;
+    float: left;
+    background-size: cover;
+    background-position: center center;
+    border: none !important;
+    @include transition;
+    &:not(:hover) {
+     filter: grayscale(100%);
+     @include opacity(90);
+   }
+   span {
+    color: map-get($color, bg);
+    background-color: map-get($color, brand);
+    padding: 3px 5px;
+    @include opacity(0);
+    @include transition;
+    font-size: map-get($font-size, sig);
+  }
   &:hover {
     border: none !important;
     width: ($about * 1.5);
-   span {
+    span {
      @include opacity(100);
    }
 
-  }
+ }
 }
 }

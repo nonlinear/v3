@@ -28,8 +28,8 @@ animation: hide-and-seek  1s linear infinite alternate;
 
 .container.all {
      background-image: url(../../assets/images/icons/icon-bg.svg);
-    background-size: $pattern $pattern;
-    background-position: 0 $margin;
+    background-size: map-get($size, pattern) map-get($size, pattern);
+    background-position: 0 map-get($size, margin);
     background-attachment: fixed;
 }
 
@@ -48,7 +48,7 @@ animation: hide-and-seek  1s linear infinite alternate;
     background-color: map-get($color, bg);
     content: "";
     display: block;
-    height: $margin + 2;
+    height: map-get($size, margin) + 2;
     width: 100%;
     position: fixed;
     z-index: 100;

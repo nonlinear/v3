@@ -3,17 +3,20 @@ $font: (
   title: Altero-Regular,
   mono: RenoMono
   );
-
-$pattern: 20px;
-$margin: 30px;
-$container: 900px;
+$size: (
+  pattern: 20px,
+margin: 30px,
+container: 900px,
+collapse: 50px
+  );
 
 $font-size: (
   sig: 12px,
   text: .9rem,
   number: 20px,
-  subtitle: 35px,
-  title: 60px
+  subtitle: 2.2rem,
+  title: 3.5rem,
+  titleLine: 3.2rem
   );
 
 $color: (
@@ -21,3 +24,23 @@ $color: (
   bg: #fff,
   brand: #691a73
   );
+
+@mixin highlight($bg: bg, $padding: 3px, $break: true) {
+        background-color: map-get($color, $bg);
+      display: inline;
+      padding: $padding 0;
+      @if $break == true {
+           &:after {
+        content: "";
+        display: block;
+      }
+      }
+   
+}
+
+@mixin zebra {
+  color: map-get($color, fg);
+  &:nth-of-type(2n) {
+color: map-get($color, brand);
+  }
+}
