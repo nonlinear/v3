@@ -1,0 +1,21 @@
+{
+  "name": "Praxis",
+  "homepage": "https://github.com/praxisnyc/praxis.github.io",
+  "authors": [
+    "Nicholas Frota <info@nicholasfrota.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animatewithsass": "^3.2.2",
+    "tile": "*"
+  }
+}
