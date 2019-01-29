@@ -37,12 +37,20 @@ layout: default
     </footer>
   </aside>
   <div class="col-md-9">
-      {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+<ul class="study">
+          {%- if page.title -%}
+      <li class="circle">{{ page.title }}</li>
   {%- endif -%}
   {%- if page.description -%}
-    <p class="description">{{ page.description }}</p>
+      <li class="description">{{ page.description }}</li>
+
   {%- endif -%}
+    {%- if page.cover -%}
+    <li class="cover" style="background-image: url(/assets/images/{{ page.cover }})">
+
+    </li>
+  {%- endif -%}
+</ul>
      {{ content }}
   </div>
 </div>

@@ -7,7 +7,9 @@ $size: (
   pattern: 20px,
 margin: 30px,
 container: 900px,
-collapse: 50px
+collapse: 50px,
+counter: 50px,
+cover: 150px
   );
 
 $font-size: (
@@ -15,8 +17,11 @@ $font-size: (
   text: .9rem,
   number: 20px,
   subtitle: 2.2rem,
+  subtitleLine: 2.2rem,
   title: 3.5rem,
-  titleLine: 3.2rem
+  titleLine: 3.2rem,
+  xl: 5.5rem,
+  xlLine: 5.2rem
   );
 
 $color: (

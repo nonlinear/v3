@@ -2,25 +2,22 @@ body {
   font-family: map-get($font, text);
   margin: map-get($size, margin) 0;
   background-color: map-get($color, bg);
+  counter-reset: my-awesome-counter;
 }
 
 .slogan {
-
-    font-size: map-get($font-size, title);
-    line-height: map-get($font-size, titleLine);
-    margin-bottom: (map-get($size, margin) * 2) !important;
+  font-size: map-get($font-size, title);
+  line-height: map-get($font-size, titleLine);
+  margin-bottom: (map-get($size, margin) * 2) !important;
   li {
-@include highlight;
-@include zebra;
-
-}
+    @include highlight;
+    @include zebra;
+  }
 }
 article.article {
-
-
   section, header.header {
     h1, h2, h3, h4, p, li {
-@include highlight;
+      @include highlight;
     }
     .meeting {
       font-family: map-get($font, mono);
@@ -58,21 +55,21 @@ aside {
   margin-bottom: (map-get($size, margin) * 2);
   @include transition;
   color: map-get($color, fg);
-div {
-  @include highlight;
-}
+  div {
+    @include highlight;
+  }
   span {
     color: map-get($color, brand);
-  @include transition;
-}
-&:hover {
-  text-decoration: none;
-   color: map-get($color, brand);
+    @include transition;
+  }
+  &:hover {
+    text-decoration: none;
+    color: map-get($color, brand);
 
-  span {
-    color: map-get($color, fg);
-}
-}
+    span {
+      color: map-get($color, fg);
+    }
+  }
 }
 footer.footer {
   font-size: map-get($font-size, sig);
@@ -98,9 +95,9 @@ aside {
     font-size: map-get($font-size, title);
     line-height: map-get($font-size, titleLine);
   }
-p {
-  @include highlight;
-}
+  p {
+    @include highlight;
+  }
 }
 
 aside {
@@ -226,4 +223,73 @@ $about: 120px;
 
  }
 }
+}
+
+ul.study {
+  .circle, .description {
+    text-transform: uppercase;
+  display: inline-block;
+  @include highlight($padding: 0);
+}
+.circle {
+  font-size: map-get($font-size, xl);
+  line-height: map-get($font-size, xlLine);
+}
+.description {
+  font-size: map-get($font-size, subtitle);
+  line-height: map-get($font-size, subtitleLine);
+  margin-bottom: map-get($size, margin) !important;
+}
+.cover {
+  height: map-get($size, cover);
+  background-size: cover;
+  display: block;
+  background-position: center center;
+  margin-bottom: map-get($size, margin);
+
+}
+}
+
+section.session {
+    margin-bottom: map-get($size, margin);
+    counter-increment: my-awesome-counter;
+
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+
+.counter {
+  font-size: map-get($font-size, subtitle);
+line-height: map-get($font-size, subtitleLine);
+&:before {
+        text-align: center;
+        displaY: block;
+        margin-top: -10px;
+        padding-top: 10px;
+       width: map-get($size, counter);
+          height: map-get($size, counter);
+    content: counter(my-awesome-counter);
+      background-color: map-get($color, brand);
+  color: map-get($color, bg);
+}
+
+}
+
+li {
+  @include highlight($padding: 5);
+  &.title, &.meeting {
+  font-family: map-get($font, text);
+
+  text-transform: uppercase;
+    &:after {
+height: map-get($size, margin);
+  }
+}
+&.title {
+font-size: map-get($font-size, subtitle);
+line-height: map-get($font-size, subtitleLine);
+ }
+}
+
+
+
 }
