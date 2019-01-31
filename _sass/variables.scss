@@ -14,14 +14,14 @@ cover: 150px
 
 $font-size: (
   sig: .8rem,
-    sigLine: 1.1rem,
+  sigLine: 1.1rem,
   text: 1rem,
   textLine: 1.35rem,
   number: 20px,
   nav: 2.8rem,
   navLine: 3rem,
   subtitle: 2rem,
-  subtitleLine: 1.8rem,
+  subtitleLine: 2.1rem,
   title: 3.5rem,
   titleLine: 3.2rem,
   xl: 5.5rem,
@@ -31,7 +31,7 @@ $font-size: (
 $color: (
   fg: #000,
   bg: #fff,
-  brand: #691a73
+  brand: purple
   );
 
 @mixin highlight($bg: bg, $padding: 3px, $break: true) {

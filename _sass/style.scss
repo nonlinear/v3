@@ -3,11 +3,9 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'layout.scss';
-@import 'allure.scss';
 @import 'accordion.scss';
 
 @include font-face(Akrobat-Regular);
 @include font-face(Akrobat-Bold);
 @include font-face(Altero-Regular);
 @include font-face(RenoMono);
-

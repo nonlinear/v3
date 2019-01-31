@@ -5,8 +5,18 @@ body {
   counter-reset: my-awesome-counter;
 }
 
-p, li {
+.dots {
+  // refer to nonlinear.nyc/tile
+  @include tile(lines-down-a, purple, 5px);
+  height: 100vh;
+  @include border-box;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  border-bottom: solid 60px white;
+}
 
+p, li {
   font-size: map-get($font-size, text);
   line-height: map-get($font-size, textLine);
 }
@@ -334,7 +344,7 @@ section.session {
   li {
         font-size: map-get($font-size, sig);
     line-height: map-get($font-size, sigLine);
-      
+
   }
 
 }
