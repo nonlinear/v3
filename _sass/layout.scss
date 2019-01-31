@@ -16,12 +16,13 @@ p, li {
 }
 
 .slogan {
-  font-size: map-get($font-size, title);
-  line-height: map-get($font-size, titleLine);
+
   margin-bottom: (map-get($size, margin) * 2) !important;
   li {
     @include highlight;
     @include zebra;
+      font-size: map-get($font-size, title);
+  line-height: map-get($font-size, titleLine);
   }
 }
 .study-info {

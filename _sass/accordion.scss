@@ -41,7 +41,8 @@
       padding: 3px 10px 5px 0 !important;
       li {
         display: inline;
-        font-size: map-get($font-size, subtitle);
+        font-size: map-get($font-size, nav);
+        line-height: map-get($font-size, navLine);
        @include zebra;
       }
     }
