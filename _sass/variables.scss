@@ -13,11 +13,13 @@ cover: 150px
   );
 
 $font-size: (
-  sig: 12px,
-  text: .9rem,
+  sig: .8rem,
+    sigLine: 1.1rem,
+  text: 1rem,
+  textLine: 1.35rem,
   number: 20px,
-  subtitle: 2.2rem,
-  subtitleLine: 2.2rem,
+  subtitle: 2rem,
+  subtitleLine: 1.8rem,
   title: 3.5rem,
   titleLine: 3.2rem,
   xl: 5.5rem,
