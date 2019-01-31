@@ -4,7 +4,9 @@ body {
   background-color: map-get($color, bg);
   counter-reset: my-awesome-counter;
 }
-
+.basic, .instructions, .newsletter, .new {
+  display: none;
+}
 .slogan {
   font-size: map-get($font-size, title);
   line-height: map-get($font-size, titleLine);
