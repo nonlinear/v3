@@ -5,6 +5,28 @@ body {
   counter-reset: my-awesome-counter;
 }
 
+
+@mixin rain($duration: $durationDefault, $function: $functionDefault, $delay: $delayDefault, $count: $countDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(rain);
+  @include duration($duration);
+  @include function($function);
+  @include delay($delay);
+  @include count($count);
+  @include visibility($visibility);
+  @at-root {
+    @include keyframes(rain) {
+      0% {
+       @include translate(-5, -5);
+       @include opacity(0);
+      }
+      100% {
+       @include translate(0, 0);
+       @include opacity(100);
+      }
+    }
+  }
+}
+
 .dots {
   // refer to nonlinear.nyc/tile
   @include tile(lines-down-a, purple, 5px);

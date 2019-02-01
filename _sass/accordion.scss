@@ -38,7 +38,7 @@
     .title {
       display: inline-block;
       background-color: map-get($color, bg);
-      padding: 3px 10px 5px 0 !important;
+      margin: 5px 0 10px 0 !important;
       li {
         display: inline;
         font-size: map-get($font-size, nav);

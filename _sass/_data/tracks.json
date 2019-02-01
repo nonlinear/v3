@@ -1,0 +1,18 @@
+{
+   "atribut": "Jekyll site generation with JSON data",
+   "gallery":[
+      {
+     "group":"Tracks",
+     "items":[
+            {
+               "id":"140",
+               "title":"Android"
+            },
+            {
+               "id":"142",
+               "title":"GDG[x]"
+            }
+         ]
+      }
+   ]
+}
