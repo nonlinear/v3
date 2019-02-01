@@ -73,7 +73,16 @@
     }
   }
   .collapse {
-   margin-bottom: 20px;
-   background-color: map-get($color, bg);
+   @include clearfix;
+   
+    @include rain($delay: $delay);
  }
 }
+
+.status {
+    @include highlight;
+    font-size: map-get($font-size, sig);
+    &:after {
+      height: (map-get($size, margin) / 2);
+    }
+   }

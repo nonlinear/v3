@@ -19,13 +19,13 @@ body {
       0% {
        @include translate($x, $y);
        @include opacity(0);
-      }
-      100% {
+     }
+     100% {
        @include translate(0, 0);
        @include opacity(100);
-      }
-    }
-  }
+     }
+   }
+ }
 }
 
 .logo, .slogan, footer.footer {
@@ -58,8 +58,8 @@ p, li {
   li {
     @include highlight;
     @include zebra;
-      font-size: map-get($font-size, title);
-  line-height: map-get($font-size, titleLine);
+    font-size: map-get($font-size, title);
+    line-height: map-get($font-size, titleLine);
   }
 }
 .study-info {
@@ -67,7 +67,7 @@ p, li {
   margin-bottom: map-get($size, margin);
   p {
 
-  @include highlight;
+    @include highlight;
   }
 
 }
@@ -133,8 +133,8 @@ footer.footer {
 
   p {
     margin: 0;
-      font-size: map-get($font-size, sig);
-      line-height: map-get($font-size, sigLine);
+    font-size: map-get($font-size, sig);
+    line-height: map-get($font-size, sigLine);
   }
 }
 }
@@ -169,7 +169,7 @@ a:not(.collapse-trigger):not(.logo) {
   color: map-get($color, brand);
   @include transition;
   text-decoration: none;
-  border-bottom: dotted 1px map-get($color, brand);
+  border-bottom: dotted 2px map-get($color, brand);
   &:hover {
     color: map-get($color, fg);
     border-bottom: dotted 2px map-get($color, fg);
@@ -186,32 +186,66 @@ h1, h2, h3, h4, h5, .title {
 
 
 
-.next, .previous, .soon {
-  &:after {
+.study-link {
+  display: block;
+  margin-bottom: (map-get($size, margin) / 2);
+  border: none !important;
+
+  p {
+    @include highlight;
+    text-transform: uppercase;
+    color: map-get($color, fg);
+    @include transition;
+    
+  }
+  &:hover {
+    p {
+      color: map-get($color, brand);
+    }
+    &:after {
+      color: map-get($color, fg);
+      border-bottom: dotted 2px map-get($color, fg);
+    }
+  }
+  &:after, &:before {
+
     font-size: map-get($font-size, sig);
-    margin-left: 5px;
-    background-color: map-get($color, brand);
-    color: map-get($color, bg);
-    padding: 0 5px;
-    @include radius(20px);
-    font-weight: bold;
-    float: right;
+  }
+  &:after {
+    @include highlight;
+
+    content: "View Syllabus";
+    display: inline-block;
+    @include transition;
+    border-bottom: dotted 2px map-get($color, brand);
+
+  }
+  &.current {
+    font-size: map-get($font-size, text);
+    padding: 20px 0 10px 0;
+
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    .main {
+      font-size: map-get($font-size, subtitle);
+    }
+    &:hover {
+      .main, .description, &:after {
+        background-color: purple;
+        color: white;
+      }
+      &:after {
+        border-color: white;
+      }
+    }
+  }
+  &.previous p.description {
+    font-size: map-get($font-size, sig);
   }
 }
 
-.next:after {
-  content: "next";
-}
-.soon {
-  @include disable(link);
-  @include opacity(40);
-  &:after {
-    content: "soon";
-  }
-}
-.previous:after {
-  content: "previous";
-}
+
 
 .design {
   z-index: 10000;
@@ -294,12 +328,12 @@ ul.study {
   }
   .circle {
 
-      
+
     @include rain($delay: $delay);
     p {
-      
-    font-size: map-get($font-size, xl);
-    line-height: map-get($font-size, xlLine);
+
+      font-size: map-get($font-size, xl);
+      line-height: map-get($font-size, xlLine);
 
     }
   }
@@ -307,20 +341,24 @@ ul.study {
     @include rain($delay: ($delay * 2));
     margin-bottom: map-get($size, margin);
     p {
-          font-size: map-get($font-size, subtitle);
-    line-height: map-get($font-size, subtitleLine);
+      font-size: map-get($font-size, subtitle);
+      line-height: map-get($font-size, subtitleLine);
     }
   }
   .cover {
     height: map-get($size, cover);
     @include rain($delay: ($delay * 3));
-    background-size: cover;
-    display: block;
-    background-position: center center;
     margin-bottom: map-get($size, margin);
 
   }
 }
+
+.cover {
+    background-size: cover;
+    display: block;
+    background-position: center center;
+
+  }
 
 
 section.session {
@@ -376,17 +414,17 @@ section.session {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap:  map-get($size, margin);
   padding-top: (map-get($size, margin) / 2);
-   margin-bottom: (map-get($size, margin) * 2);
-   li, h2 {
+  margin-bottom: (map-get($size, margin) * 2);
+  li, h2 {
     padding-bottom: (map-get($size, margin) / 2);
-   }
+  }
   h2 {
     font-family: map-get($font, text);
     font-size: map-get($font-size, subtitle);
     line-height: map-get($font-size, subtitleLine);
   }
   li {
-        font-size: map-get($font-size, sig);
+    font-size: map-get($font-size, sig);
     line-height: map-get($font-size, sigLine);
 
   }
