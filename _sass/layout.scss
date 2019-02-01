@@ -365,7 +365,14 @@ section.session {
   @include rain($delay: ($delay * 6));
   display: grid;
   grid-template-columns: 1fr 7fr;
-
+.main {
+  font-size: (map-get($font-size, subtitle) * 0.7);
+    line-height: (map-get($font-size, subtitleLine) * 0.7);
+text-transform: uppercase;
+}
+.action:not(:last-of-type):after {
+  height: map-get($size, margin);
+}
   .counter {
     font-size: map-get($font-size, subtitle);
     line-height: map-get($font-size, subtitleLine);
@@ -412,6 +419,12 @@ section.session {
   column-gap:  map-get($size, margin);
   padding-top: (map-get($size, margin) / 2);
   margin-bottom: (map-get($size, margin) * 2);
+  &.previous {
+      grid-template-columns: 1fr 1fr;
+      .enroll {
+        display: none;
+      }
+  }
   li, h2 {
     padding-bottom: (map-get($size, margin) / 2);
   }
