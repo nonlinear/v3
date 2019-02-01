@@ -9,13 +9,13 @@ layout: default
 
 <div id="accordion" class="panel-group">
   <div class="panel">
-    <a href="#" class="collapse-trigger collapsed" data-toggle="collapse" data-target="#study" aria-expanded="false" aria-controls="study">
+    <a href="#" class="collapse-trigger" data-toggle="collapse" data-target="#study" aria-expanded="true" aria-controls="study">
       <ul class="title">
         <li>Study</li><li>Circle</li>
       </ul>
       <div class="description"><p>We need to get educated: A bottom-up way to find understanding of the seminal issues that shape our future.</p></div>
     </a>
-    <div id="study" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+    <div id="study" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
      <p class="status">Current Study Group:</p>
   {% for post in site.categories.study %}
   {% if post.status contains "current" %}

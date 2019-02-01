@@ -74,6 +74,7 @@
   }
   .collapse {
    @include clearfix;
+   @include rain($delay: $delay);
  }
 }
 
