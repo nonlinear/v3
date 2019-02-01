@@ -7,11 +7,12 @@
       height: map-get($size, collapse);
     }
   }
-      .collapse-trigger[aria-expanded="true"] .description {
-      height: map-get($size, collapse);
-    }
+  .collapse-trigger[aria-expanded="true"] .description {
+    height: map-get($size, collapse);
+  }
   .collapse-trigger {
     border-top: solid 5px map-get($color, fg);
+    @include rain($delay: $delay);
     display: block;
     &:before {
       content: "";
@@ -28,8 +29,8 @@
       @include transition;
       p {
         @include highlight;
-              color: map-get($color, fg);
-      line-height: 130%;
+        color: map-get($color, fg);
+        line-height: 130%;
       }
     }
     &:hover {
@@ -43,24 +44,36 @@
         display: inline;
         font-size: map-get($font-size, nav);
         line-height: map-get($font-size, navLine);
-       @include zebra;
+        @include zebra;
       }
     }
   }
-  &:nth-of-type(2) .collapse-trigger:before {
-    margin-left: (100% / 5);
+  &:nth-of-type(2) .collapse-trigger {
+    @include rain($delay: ($delay * 3));
+    &:before {
+      margin-left: (100% / 5);
+    }
   }
-  &:nth-of-type(3) .collapse-trigger:before {
-    margin-left: ((100% / 5) * 2) ;
+  &:nth-of-type(3) .collapse-trigger {
+    @include rain($delay: ($delay * 4));
+    &:before {
+      margin-left: ((100% / 5) * 2) ;
+    }
   }
-  &:nth-of-type(4) .collapse-trigger:before {
-    margin-left: ((100% / 5) * 3);
+  &:nth-of-type(4) .collapse-trigger {
+    @include rain($delay: ($delay * 5));
+    &:before {
+      margin-left: ((100% / 5) * 3);
+    }
   }
-  &:nth-of-type(5) .collapse-trigger:before {
-    margin-left: ((100% / 5) * 4);
+  &:nth-of-type(5) .collapse-trigger {
+    @include rain($delay: ($delay * 6));
+    &:before {
+      margin-left: ((100% / 5) * 4);
+    }
   }
   .collapse {
-     margin-bottom: 20px;
-      background-color: map-get($color, bg);
-}
+   margin-bottom: 20px;
+   background-color: map-get($color, bg);
+ }
 }

@@ -6,17 +6,18 @@ body {
 }
 
 
-@mixin rain($duration: $durationDefault, $function: $functionDefault, $delay: $delayDefault, $count: $countDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin rain($x: 10, $y: 10, $delay: 0, $duration: 1s, $function: $functionDefault, $count: $countDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(rain);
   @include duration($duration);
   @include function($function);
   @include delay($delay);
+  @include fill-mode($fill);
   @include count($count);
   @include visibility($visibility);
   @at-root {
     @include keyframes(rain) {
       0% {
-       @include translate(-5, -5);
+       @include translate($x, $y);
        @include opacity(0);
       }
       100% {
@@ -25,6 +26,10 @@ body {
       }
     }
   }
+}
+
+.logo, .slogan, footer.footer {
+  @include rain;
 }
 
 .dots {
@@ -58,10 +63,13 @@ p, li {
   }
 }
 .study-info {
+  @include rain($delay: ($delay * 4));
+  margin-bottom: map-get($size, margin);
+  p {
+
   @include highlight;
-  &:after {
-    height: map-get($size, margin);
   }
+
 }
 
 article.article {
@@ -280,21 +288,32 @@ $about: 120px;
 ul.study {
   .circle, .description {
     text-transform: uppercase;
-    display: inline-block;
-    @include highlight($padding: 0);
+    p {
+      @include highlight;
+    }
   }
   .circle {
+
+      
+    @include rain($delay: $delay);
+    p {
+      
     font-size: map-get($font-size, xl);
     line-height: map-get($font-size, xlLine);
+
+    }
   }
   .description {
-    font-size: map-get($font-size, subtitle);
+    @include rain($delay: ($delay * 2));
+    margin-bottom: map-get($size, margin);
+    p {
+          font-size: map-get($font-size, subtitle);
     line-height: map-get($font-size, subtitleLine);
-    margin-bottom: map-get($size, margin) !important;
-    display: inline-block;
+    }
   }
   .cover {
     height: map-get($size, cover);
+    @include rain($delay: ($delay * 3));
     background-size: cover;
     display: block;
     background-position: center center;
@@ -308,6 +327,7 @@ section.session {
   margin-bottom: map-get($size, margin);
   counter-increment: my-awesome-counter;
 
+  @include rain($delay: ($delay * 6));
   display: grid;
   grid-template-columns: 1fr 7fr;
 
@@ -351,6 +371,8 @@ section.session {
 .instructions {
   background-color: #fff;
   display: grid;
+
+  @include rain($delay: ($delay * 5));
   grid-template-columns: 1fr 1fr 1fr;
   column-gap:  map-get($size, margin);
   padding-top: (map-get($size, margin) / 2);
