@@ -198,22 +198,21 @@ h1, h2, h3, h4, h5, .title {
     @include transition;
     
   }
-  &:hover {
-    p {
-      color: map-get($color, brand);
+&:hover {
+      .main, .description, &:after {
+        background-color: purple;
+        color: white;
+      }
+      &:after {
+        border-color: white;
+      }
     }
-    &:after {
-      color: map-get($color, fg);
-      border-bottom: dotted 2px map-get($color, fg);
-    }
-  }
   &:after, &:before {
 
     font-size: map-get($font-size, sig);
   }
   &:after {
     @include highlight;
-
     content: "View Syllabus";
     display: inline-block;
     @include transition;
@@ -223,8 +222,6 @@ h1, h2, h3, h4, h5, .title {
   &.current {
     font-size: map-get($font-size, text);
     padding: 20px 0 10px 0;
-
-    background-attachment: fixed;
     background-position: center center;
     background-size: cover;
     .main {
