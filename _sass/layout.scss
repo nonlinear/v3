@@ -31,6 +31,9 @@ body {
 .logo, .slogan, footer.footer {
   @include rain;
 }
+footer.footer {
+  display: none;
+}
 
 .dots {
   // refer to nonlinear.nyc/tile
@@ -196,7 +199,7 @@ h1, h2, h3, h4, h5, .title {
     text-transform: uppercase;
     color: map-get($color, fg);
     @include transition;
-    
+
   }
 &:hover {
       .main, .description, &:after {
