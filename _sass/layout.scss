@@ -111,12 +111,18 @@ article.article {
 
 aside {
  height:  100vh;
- .title a.logo {
+
   position: fixed;
+ .title a.logo {
   display: inline-block;
   margin-bottom: (map-get($size, margin) * 2);
   @include transition;
   color: map-get($color, fg);
+  .cat {
+width: 170px;
+z-index: -1;
+margin-left: -30px;
+  }
   div {
     @include highlight;
   }
@@ -127,7 +133,6 @@ aside {
   &:hover {
     text-decoration: none;
     color: map-get($color, brand);
-
     span {
       color: map-get($color, fg);
     }
