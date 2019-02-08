@@ -118,10 +118,13 @@ aside {
   margin-bottom: (map-get($size, margin) * 2);
   @include transition;
   color: map-get($color, fg);
-  .cat {
+  svg {
 width: 170px;
 z-index: -1;
 margin-left: -30px;
+.cls-3, .cls-2, .cls-a {
+  @include transition;
+}
   }
   div {
     @include highlight;
@@ -133,6 +136,11 @@ margin-left: -30px;
   &:hover {
     text-decoration: none;
     color: map-get($color, brand);
+    svg {
+      .cls-3, .cls-2 {
+      fill: map-get($color, brand);
+    }
+    }
     span {
       color: map-get($color, fg);
     }
