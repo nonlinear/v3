@@ -37,7 +37,7 @@ layout: default
     </div>
   </div>
   <div class="panel">
-    <a href="#" class="collapse-trigger collapsed" data-toggle="collapse" data-target="#discovery" aria-expanded="false" aria-controls="discovery">
+    <a href="#" class="collapse-trigger collapsed soon" data-toggle="collapse" data-target="#discovery" aria-expanded="false" aria-controls="discovery">
      <ul class="title">
       <li>Discovery</li><li>Circle</li>
     </ul>
@@ -60,7 +60,7 @@ layout: default
 <ul>
       {% for post in site.categories.tools %}
     {% if post.url %}
-    <li><a class="{{ post.status }}" href="{{ post.url }}">{{ post.title }}</a><p>{{ post.description }}</p></li>
+    <li><a class="{{ post.status }}" href="{{ post.redirect }}" target="tools">{{ post.title }}</a><p>{{ post.description }}</p></li>
     {% endif %}
   {% endfor %}
 </ul>
@@ -68,7 +68,7 @@ layout: default
 </div>
 
 <div class="panel">
-  <a href="#" class="collapse-trigger collapsed" data-toggle="collapse" data-target="#about" aria-expanded="false" aria-controls="about">
+  <a href="#" class="collapse-trigger collapsed soon" data-toggle="collapse" data-target="#about" aria-expanded="false" aria-controls="about">
     <ul class="title"><li>About</li><li>Us</li></ul>
 <div class="description"><p>We're a group of queer people gathering to understand challenges and opportunities of our digital society.</p></div>
   </a>

@@ -112,6 +112,7 @@ article.article {
 aside {
  height:  100vh;
  .title a.logo {
+  position: fixed;
   display: inline-block;
   margin-bottom: (map-get($size, margin) * 2);
   @include transition;

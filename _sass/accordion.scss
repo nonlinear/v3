@@ -3,8 +3,13 @@
   @include reset(all);
   @include reset(shadow);
   &:hover {
-    .collapse-trigger .description {
+    .collapse-trigger {
+      .description {
       height: map-get($size, collapse);
+    }
+    &.soon:after {
+      margin-top: map-get($size, soon) - map-get($size, collapse);
+    }
     }
   }
   .collapse-trigger[aria-expanded="true"] .description {
@@ -14,6 +19,24 @@
     border-top: solid 5px map-get($color, fg);
     @include rain($delay: $delay);
     display: block;
+    &.soon {
+      @include disable(link);
+      ul {
+        @include opacity(40);
+      }
+      &:after {
+        content: "soon";
+        float: right;
+        text-transform: uppercase;
+        color: map-get($color, bg);
+        background-color: map-get($color, brand);
+        display: block;
+        @include transition;
+        text-align: center;
+        padding: 5px 10px;
+        margin-top: map-get($size, soon);
+      }
+    }
     &:before {
       content: "";
       display: block;
@@ -48,6 +71,10 @@
       }
     }
   }
+  &:first-of-type .collapse {
+
+   @include rain($delay: $delay);
+  }
   &:nth-of-type(2) .collapse-trigger {
     @include rain($delay: ($delay * 3));
     &:before {
@@ -74,7 +101,22 @@
   }
   .collapse {
    @include clearfix;
-   @include rain($delay: $delay);
+   ul {
+    li {
+      padding-bottom: (map-get($size, margin)/ 2);
+    }
+    a {
+      z-index: 100;
+      text-transform: uppercase;
+    }
+    p {
+      z-index: -1;
+      font-size: map-get($font-size, sig);
+    }
+    a, p {
+      @include highlight;
+    }
+   }
  }
 }
 
