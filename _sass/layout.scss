@@ -64,6 +64,7 @@ p, li {
     @include zebra;
     font-size: map-get($font-size, title);
     line-height: map-get($font-size, titleLine);
+        word-wrap: break-word;
   }
 }
 .study-info {

@@ -2,13 +2,21 @@
 .panel {
   @include reset(all);
   @include reset(shadow);
+
+
   &:hover {
     .collapse-trigger {
       .description {
       height: map-get($size, collapse);
+          @media screen and (max-width: map-get($size, bp)) {
+            height: 100px;
+          }
     }
     &.soon:after {
       margin-top: map-get($size, soon) - map-get($size, collapse);
+                @media screen and (max-width: map-get($size, bp)) {
+           margin-top: map-get($size, soon) - 100px;
+          }
     }
     }
   }
@@ -56,6 +64,7 @@
       @include transition;
       p {
         @include highlight;
+
         color: map-get($color, fg);
         line-height: 130%;
       }
@@ -65,16 +74,18 @@
     }
     .title {
       display: inline-block;
+         @media screen and (min-width: map-get($size, bp)) {
       background-color: map-get($color, bg);
+    }
       margin: 5px 0 10px 0 !important;
+
       li {
         display: inline;
-          @media screen and (max-width: map-get($size, bp)) {
-            &:after {
-              content: "";
-              display: block;
-            }
-          }
+  @media screen and (max-width: map-get($size, bp)) {
+    display: inline-block;
+
+      background-color: map-get($color, bg);
+  }
         font-size: map-get($font-size, nav);
         line-height: map-get($font-size, navLine);
         @include zebra;
