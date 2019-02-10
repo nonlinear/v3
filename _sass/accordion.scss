@@ -69,6 +69,12 @@
       margin: 5px 0 10px 0 !important;
       li {
         display: inline;
+          @media screen and (max-width: map-get($size, bp)) {
+            &:after {
+              content: "";
+              display: block;
+            }
+          }
         font-size: map-get($font-size, nav);
         line-height: map-get($font-size, navLine);
         @include zebra;

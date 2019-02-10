@@ -6,6 +6,7 @@ body {
 }
 
 
+
 @mixin rain($x: 10, $y: 10, $delay: 0, $duration: 1s, $function: $functionDefault, $count: $countDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
   @include animation-name(rain);
   @include duration($duration);
@@ -110,24 +111,43 @@ article.article {
 
 
 aside {
+  @media screen and (min-width: map-get($size, bp)) {
+
  height:  100vh;
 
   position: fixed;
+  }
  .title a.logo {
+      @media screen and (min-width: map-get($size, bp)) {
   display: inline-block;
+}
   margin-bottom: (map-get($size, margin) * 2);
   @include transition;
   color: map-get($color, fg);
+
   svg {
+    @media screen and (min-width: map-get($size, bp)) {
+
 width: 170px;
-z-index: -1;
+
 margin-left: -30px;
+      }
+         @media screen and (max-width: map-get($size, bp)) {
+          float: left;
+          margin: 10px;
+          width: 150px;
+          z-index: 3000 !important;
+         }
 .cls-3, .cls-2, .cls-a {
   @include transition;
 }
   }
   div {
     @include highlight;
+    @media screen and (max-width: map-get($size, bp)) {
+      float: left;
+
+    }
   }
   span {
     color: map-get($color, brand);
@@ -178,9 +198,11 @@ aside {
 }
 
 aside {
+    @media screen and (min-width: map-get($size, bp)) {
   .title, footer {
-    width: 150px;
+    width: map-get($size, aside);
   }
+}
 }
 a:not(.collapse-trigger):not(.logo) {
   color: map-get($color, brand);
@@ -284,11 +306,18 @@ h1, h2, h3, h4, h5, .title {
   height: map-get($size, margin);
   width: 100%;
   z-index: 100;
+
   .row *:before {
     display: block;
     background-color: map-get($color, fg);
     content: "";
     height: 10px;
+  }
+    @media screen and (max-width: map-get($size, bp)) {
+    .col-md-3:before {
+      display: none;
+    }
+
   }
   &.up {
     top: 0;
