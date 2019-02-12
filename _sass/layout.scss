@@ -443,9 +443,16 @@ text-transform: uppercase;
       font-family: map-get($font, text);
 
       text-transform: uppercase;
-      &:after {
+     
+    }
+    &.title, &.place {
+       &:after {
         height: map-get($size, margin);
       }
+    }
+    &.place {
+
+      font-size: map-get($font-size, sig);
     }
     &.title {
       font-size: map-get($font-size, subtitle);
