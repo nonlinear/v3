@@ -371,7 +371,7 @@ ul.study {
     }
   }
   .circle {
-
+word-wrap: break-word;
 
     @include rain($delay: $delay);
     p {
