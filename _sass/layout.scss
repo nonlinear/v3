@@ -300,7 +300,7 @@ h1, h2, h3, h4, h5, .title {
 }
 
 .limit {
-  @include tile(lines-down-c, white, 5);
+  @include tile(lines-down-c, white, 5px);
   content: "";
   display: block;
   position: fixed;
@@ -364,6 +364,9 @@ $about: 120px;
 }
 
 ul.study {
+  .home & {
+    display: none;
+  }
   .circle, .description {
     text-transform: uppercase;
     p {
@@ -390,7 +393,7 @@ word-wrap: break-word;
     }
   }
   .cover {
-    height: map-get($size, cover);
+    height: map-get($size, image);
     @include rain($delay: ($delay * 3));
     margin-bottom: map-get($size, margin);
 

@@ -2,6 +2,41 @@
 layout: default
 ---
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+{%- if page.title -%}
+<title>{{ page.title }}</title>
+<meta name="title" content={{ page.title }}>
+{%- endif -%}
+{%if page.description %}
+<meta name="description" content={{ page.description }}>
+{% endif %}
+
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://about.praxis.nyc/">
+{%if page.title %}
+  <meta property="og:title" content={{ page.title }}>
+{% endif %}
+{%if page.description %}
+  <meta property="og:description" content={{ page.description }}>
+{% endif %}
+{%if page.image %}
+  <meta property="og:image" content=/assets/images/{{ page.image }}>
+{% endif %}
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://about.praxis.nyc/">
+{%if page.title %}
+  <meta property="twitter:title" content={{ page.title }}>
+{% endif %}
+{%if page.description %}
+  <meta property="twitter:description" content={{ page.description }}>
+{% endif %}
+{%if page.image %}
+  <meta property="twitter:image" content=/assets/images/{{ page.image }}>
+{% endif %}
+
 <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 
 <body class="{%- if page.categories -%}{{ page.categories }}{%- endif -%}">
@@ -41,9 +76,8 @@ layout: default
       <li class="description"><p>{{ page.description }}</p></li>
 
   {%- endif -%}
-    {%- if page.cover -%}
-    <li class="cover" style="background-image: url(/assets/images/{{ page.cover }})">
-
+    {%- if page.image -%}
+    <li class="cover" style="background-image: url(/assets/images/{{ page.image }})">
     </li>
   {%- endif -%}
 </ul>
