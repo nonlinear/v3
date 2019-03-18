@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-18T11:56:32-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">signal</title><link href="http://localhost:4000/tools/signal/" rel="alternate" type="text/html" title="signal" /><published>2019-01-21T18:03:16-05:00</published><updated>2019-01-21T18:03:16-05:00</updated><id>http://localhost:4000/tools/signal</id><content type="html" xml:base="http://localhost:4000/tools/signal/"></content><author><name></name></author></entry><entry><title type="html">nicholas</title><link href="http://localhost:4000/about/nicholas/" rel="alternate" type="text/html" title="nicholas" /><published>2019-01-21T18:03:16-05:00</published><updated>2019-01-21T18:03:16-05:00</updated><id>http://localhost:4000/about/nicholas</id><content type="html" xml:base="http://localhost:4000/about/nicholas/"></content><author><name></name></author></entry><entry><title type="html">su</title><link href="http://localhost:4000/about/su/" rel="alternate" type="text/html" title="su" /><published>2019-01-21T18:03:16-05:00</published><updated>2019-01-21T18:03:16-05:00</updated><id>http://localhost:4000/about/su</id><content type="html" xml:base="http://localhost:4000/about/su/"></content><author><name></name></author></entry><entry><title type="html">hyperreal</title><link href="http://localhost:4000/study/hyperreal/" rel="alternate" type="text/html" title="hyperreal" /><published>2019-01-21T18:03:16-05:00</published><updated>2019-01-21T18:03:16-05:00</updated><id>http://localhost:4000/study/hyperreal</id><content type="html" xml:base="http://localhost:4000/study/hyperreal/">&lt;div class=&quot;study-info&quot;&gt;&lt;p&gt;This study circle met in Brooklyn every other Wednesday starting April 18 2018 for a total of five sessions.&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;instructions previous&quot;&gt;
+  &lt;div class=&quot;rules&quot;&gt;
+    &lt;h2&gt;Rules:&lt;/h2&gt;
+    &lt;ul&gt;
+
+      &lt;li&gt;a book chapter or video will be given to you to study before the meeting&lt;/li&gt;
+      &lt;li&gt;a place to discuss will be announced&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;enroll&quot;&gt;
+    &lt;h2&gt;Enroll:&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;install &lt;a href=&quot;https://signal.org/&quot;&gt;signal app&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;text your name to 917-512-1486 via signal&lt;/li&gt;
+      &lt;li&gt;you’ll be added to the group&lt;/li&gt;
+
+
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;guidelines&quot;&gt;
+    &lt;h2&gt;Guidelines:&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Free and open to all&lt;/li&gt;
+      &lt;li&gt;Safe space for queers and PoCs&lt;/li&gt;
+      &lt;li&gt;If you don’t study the assignment, please make space for those who do&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;section class=&quot;session&quot;&gt;
+  &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;title&quot;&gt;Dude, You Broke the Future&lt;/li&gt;
+    &lt;li class=&quot;meeting&quot;&gt;Wednesday 4/18/2018, 7 to 9pm&lt;/li&gt;
+    &lt;li class=&quot;place&quot;&gt;at June Bar&lt;/li&gt;
+    &lt;li class=&quot;main&quot;&gt;Dude, You Broke the Future&lt;/li&gt;
+    &lt;li class=&quot;action&quot;&gt;
+      &lt;a href=&quot;https://www.youtube.com/watch?v=RmIgJ64z6Y4&quot;&gt;video&lt;/a&gt;, 57 minutes&lt;/li&gt;
+      &lt;li class=&quot;main&quot;&gt;Simulacra and Simulation&lt;/li&gt;
+      &lt;li&gt;The Precession of Simulacra, page 3&lt;/li&gt;
+      &lt;li&gt;The Divine Irreference of Images, page 4&lt;/li&gt;
+      &lt;li class=&quot;action&quot;&gt;
+        &lt;a href=&quot;http://www.e-reading.club/bookreader.php/144970/Simulacra_and_Simulation.pdf&quot;&gt;download PDF&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;session&quot;&gt;
+    &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li class=&quot;title&quot;&gt;Society of Spectacle&lt;/li&gt;
+      &lt;li classs=&quot;meeting&quot;&gt;Wednesday 5/2/2018, 7 to 9pm
+      at 375 Menahan Street&lt;/li&gt;
+
+
+      &lt;li&gt;Chapter 1: The Culmination of Separation&lt;/li&gt;
+      &lt;li&gt;Chapter 2: The Commodity as Spectacle&lt;/li&gt;
+      &lt;li&gt;Chapter 6: Spetacular Time&lt;/li&gt;
+      &lt;li class=&quot;action&quot;&gt;&lt;a href=&quot;https://theanarchistlibrary.org/library/guy-debord-the-society-of-the-spectacle.pdf&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+  &lt;/section&gt;
+
+  &lt;section class=&quot;session&quot;&gt;
+    &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li class=&quot;title&quot;&gt;The Work of Art in the Age of Mechanical Reproduction&lt;/li&gt;
+      &lt;li classs=&quot;meeting&quot;&gt;Wednesday 5/16/2018, 7 to 9pm&lt;/li&gt;
+    &lt;li class=&quot;place&quot;&gt;at 375 Menahan Street&lt;/li&gt;
+            &lt;li class=&quot;action&quot;&gt;&lt;a href=&quot;http://web.mit.edu/allanmc/www/benjamin.pdf&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+      &lt;/section&gt;
+
+      &lt;section class=&quot;session&quot;&gt;
+        &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+        &lt;ul&gt;
+          &lt;li class=&quot;title&quot;&gt;Understanding Media&lt;/li&gt;
+          &lt;li class=&quot;meeting&quot;&gt;Wednesday 6/6/2018, 7 to 9pm&lt;/li&gt;
+    &lt;li class=&quot;place&quot;&gt;at June Bar&lt;/li&gt;
+
+              &lt;li class=&quot;main&quot;&gt;The Gadget Lover: Narcissus as Narcosis&lt;/li&gt;
+              &lt;li class=&quot;main&quot;&gt;Challenge and Collapse: The Nemesis of Creativity&lt;/li&gt;
+              &lt;li class=&quot;action&quot;&gt;&lt;a href=&quot;http://robynbacken.com/text/nw_research.pdf&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+      &lt;/section&gt;
+
+      &lt;section class=&quot;session&quot;&gt;
+        &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+        &lt;ul&gt;
+          &lt;li class=&quot;title&quot;&gt;Immediatism, Hakim Bey&lt;/li&gt;
+          &lt;li class=&quot;meeting&quot;&gt;Wednesday 7/19/2018, 7 to 9pm&lt;/li&gt;
+    &lt;li class=&quot;place&quot;&gt;at Tradesman Bar&lt;/li&gt;
+       
+                &lt;li class=&quot;main&quot;&gt;Immediatism chapter (page 12)&lt;/li&gt;
+                &lt;li class=&quot;action&quot;&gt;&lt;a href=&quot;https://monoskop.org/images/1/17/Bey_Hakim_Immediatism.pdf&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;main&quot;&gt;Telekommunist Manifesto&lt;/li&gt;
+                &lt;li class=&quot;main&quot;&gt;The Manifesto of the Telekommunisten Network&lt;/li&gt;
+                &lt;li class=&quot;action&quot;&gt;&lt;a href=&quot;http://media.telekommunisten.net/manifesto.pdf&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;main&quot;&gt;Simulacra and Simulation&lt;/li&gt;
+                  &lt;li class=&quot;main&quot;&gt;Hypermarket and Hypercommodity, page 52&lt;/li&gt;
+                  &lt;li class=&quot;main&quot;&gt;The Implosion of Meaning in the Media, page 55&lt;/li&gt;
+                  &lt;li class=&quot;main&quot;&gt;Simulacra and science fiction, page 81&lt;/li&gt;
+                  &lt;li class=&quot;action&quot;&gt;&lt;a href=&quot;http://www.e-reading.club/bookreader.php/144970/Simulacra_and_Simulation.pdf&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+             
+            &lt;/ul&gt;
+          &lt;/section&gt;</content><author><name></name></author><summary type="html">This study circle met in Brooklyn every other Wednesday starting April 18 2018 for a total of five sessions.</summary></entry><entry><title type="html">nomadism</title><link href="http://localhost:4000/study/nomadism/" rel="alternate" type="text/html" title="nomadism" /><published>2019-01-21T18:03:16-05:00</published><updated>2019-01-21T18:03:16-05:00</updated><id>http://localhost:4000/study/nomadism</id><content type="html" xml:base="http://localhost:4000/study/nomadism/">&lt;div class=&quot;study-info&quot;&gt;&lt;p&gt;This study circle meets in Brooklyn every other week starting March 5th 2019 for a total of four sessions.&lt;/p&gt;&lt;/div&gt;
+
+&lt;div class=&quot;instructions&quot;&gt;
+  &lt;div class=&quot;rules&quot;&gt;
+    &lt;h2&gt;Rules:&lt;/h2&gt;
+    &lt;ul&gt;
+
+&lt;li&gt;a book chapter or video will be given to you to study before the meeting&lt;/li&gt;
+&lt;li&gt;a place to discuss will be announced&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;enroll&quot;&gt;
+    &lt;h2&gt;Enroll:&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;install &lt;a href=&quot;https://signal.org/&quot;&gt;signal app&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;text your name to 917-512-1486 via signal&lt;/li&gt;
+      &lt;li&gt;you’ll be added to the group&lt;/li&gt;
+
+
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;guidelines&quot;&gt;
+    &lt;h2&gt;Guidelines:&lt;/h2&gt;
+    &lt;ul&gt;
+&lt;li&gt;Free and open to all&lt;/li&gt;
+&lt;li&gt;Safe space for queers and PoCs&lt;/li&gt;
+&lt;li&gt;If you don’t study the assignment, please make space for those who do&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  &lt;section class=&quot;session&quot;&gt;
+      &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+     &lt;ul&gt;
+        &lt;li class=&quot;title&quot;&gt;Treatise on Nomadology: The War Machine&lt;/li&gt;
+      &lt;li class=&quot;meeting&quot;&gt;Tuesday, Mar 5th 2019, 7-9pm&lt;/li&gt;
+      &lt;li class=&quot;place&quot;&gt;enroll to be informed&lt;/li&gt;
+       &lt;li&gt;A Thousand Plateaus&lt;/li&gt;
+          &lt;li&gt;Deleuze and Guattari&lt;/li&gt;
+          &lt;li&gt; &lt;a href=&quot;https://libcom.org/files/A%20Thousand%20Plateaus.pdf&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+
+
+  &lt;/section&gt;
+    &lt;!-- &lt;section class=&quot;session&quot;&gt;
+      &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+     &lt;ul&gt;
+        &lt;li class=&quot;title&quot;&gt;Apparatus of Capture&lt;/li&gt;
+      &lt;li class=&quot;meeting&quot;&gt;Tuesday, March 19 2019, 7-9pm&lt;/li&gt;
+      &lt;li class=&quot;place&quot;&gt;enroll to be informed&lt;/li&gt;
+       &lt;li&gt;A Thousand Plateaus&lt;/li&gt;
+          &lt;li&gt;Deleuze and Guattari&lt;/li&gt;
+          &lt;li&gt; &lt;a href=&quot;https://libcom.org/files/A%20Thousand%20Plateaus.pdf&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+
+  &lt;/section&gt; --&gt;
+
+      &lt;section class=&quot;session&quot;&gt;
+      &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+     &lt;ul&gt;
+        &lt;li class=&quot;title&quot;&gt;The Smooth and the Striated&lt;/li&gt;
+      &lt;li class=&quot;meeting&quot;&gt;Thursday, March 21 2019, 7-9pm&lt;/li&gt;
+      &lt;li class=&quot;place&quot;&gt;enroll to be informed&lt;/li&gt;
+       &lt;li&gt;A Thousand Plateaus&lt;/li&gt;
+          &lt;li&gt;Deleuze and Guattari&lt;/li&gt;
+          &lt;li&gt; &lt;a href=&quot;https://libcom.org/files/A%20Thousand%20Plateaus.pdf&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+
+  &lt;/section&gt;
+
+        &lt;section class=&quot;session&quot;&gt;
+      &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+     &lt;ul&gt;
+        &lt;li class=&quot;title&quot;&gt;TBD&lt;/li&gt;
+      &lt;li class=&quot;meeting&quot;&gt;Thursday, April 4 2019, 7-9pm&lt;/li&gt;
+      &lt;li class=&quot;place&quot;&gt;enroll to be informed&lt;/li&gt;
+          &lt;li&gt; &lt;a href=&quot;#&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+
+  &lt;/section&gt;
+  &lt;section class=&quot;session&quot;&gt;
+      &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+     &lt;ul&gt;
+        &lt;li class=&quot;title&quot;&gt;TBD&lt;/li&gt;
+      &lt;li class=&quot;meeting&quot;&gt;Thursday, April 18 2019, 7-9pm&lt;/li&gt;
+      &lt;li class=&quot;place&quot;&gt;enroll to be informed&lt;/li&gt;
+          &lt;li&gt; &lt;a href=&quot;#&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+
+  &lt;/section&gt;
+&lt;section class=&quot;newsletter&quot;&gt;
+  &lt;p&gt;Be informed of current praxis happenings.&lt;/p&gt;
+  &lt;form&gt;
+    newsletter form
+  &lt;/form&gt;
+&lt;/section&gt;
+  &lt;section class=&quot;new&quot;&gt;
+    &lt;h2&gt;Wanna run your own study circle?&lt;/h2&gt;
+    &lt;p&gt;To create your own study circle with friends, the existing syllabi are available for you.&lt;/p&gt;
+    &lt;p&gt;Email us at &lt;a href=&quot;mailto:hello@praxis.nyc?subject=Study Circle&quot;&gt;hello@praxis.nyc&lt;/a&gt; and and we can help you to get started.&lt;/p&gt;
+  &lt;/section&gt;</content><author><name></name></author><summary type="html">This study circle meets in Brooklyn every other week starting March 5th 2019 for a total of four sessions.</summary></entry><entry><title type="html">Queer Families</title><link href="http://localhost:4000/study/queerfam/" rel="alternate" type="text/html" title="Queer Families" /><published>2019-01-21T18:03:16-05:00</published><updated>2019-01-21T18:03:16-05:00</updated><id>http://localhost:4000/study/queerfam</id><content type="html" xml:base="http://localhost:4000/study/queerfam/">&lt;section class=&quot;session&quot;&gt;
+  &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;title&quot;&gt;The Dialect of Sex: The Case for a Feminist Revolution
+    by Shulamith Firestone&lt;/li&gt;
+    &lt;li class=&quot;meeting&quot;&gt;Thursday August 10th 2017, 7-9pm&lt;/li&gt;
+    &lt;li class=&quot;place&quot;&gt;Bluestockings Bookstore&lt;/li&gt;
+
+    &lt;li&gt;Chapter 1&lt;/li&gt;
+    &lt;li&gt; &lt;a href=&quot;https://teoriaevolutiva.files.wordpress.com/2013/10/firestone-shulamith-dialectic-sex-case-feminist-revolution.pdf&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+&lt;/section&gt;
+
+&lt;section class=&quot;session&quot;&gt;
+  &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;title&quot;&gt;The Straight Mind and Other Essays by Monique Wittig&lt;/li&gt;
+    &lt;li class=&quot;meeting&quot;&gt;Thursday August 24th 2017, 7-9pm&lt;/li&gt;
+    &lt;li class=&quot;place&quot;&gt;June Bar&lt;/li&gt;
+
+    &lt;li&gt;One Is Not Born a Woman &lt;a href=&quot;http://azinelibrary.org/other/wittig-print.pdf&quot;&gt;PDF&lt;/a&gt;)&lt;/li&gt;
+    &lt;li&gt;The Straight Mind &lt;a href=&quot;http://faculty.winthrop.edu/stockk/contemporary%20art/Wittig%20straight.pdf&quot;&gt;PDF&lt;/a&gt;)&lt;/li&gt;
+    &lt;li&gt;On the Social Contract&lt;/li&gt;
+  &lt;/ul&gt;
+
+&lt;/section&gt;
+
+&lt;section class=&quot;session&quot;&gt;
+  &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;title&quot;&gt;Feminism is Queer: The Intimate Connection Between Queer and Feminist Theory by Mimi Marinucci&lt;/li&gt;
+    &lt;li class=&quot;meeting&quot;&gt;Wednesday September 13th 2017, 7-9pm
+    &lt;/li&gt;
+
+&lt;li class=&quot;place&quot;&gt;June Bar&lt;/li&gt;
+    &lt;li&gt;chapter TBD&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://voidnetwork.gr/wp-content/uploads/2016/10/Feminism-is-Queer-The-Intimate-Connection-between-Queer-and-Feminist-Theory-Mimi-Marinucci-.pdf&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;session&quot;&gt;
+  &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;title&quot;&gt;The History of Sexuality by Michel Foucault&lt;/li&gt;
+    &lt;li class=&quot;meeting&quot;&gt;Wednesday September 27th 2017, 7-9pm&lt;/li&gt;
+    &lt;li class=&quot;place&quot;&gt;June Bar&lt;/li&gt;
+    &lt;li&gt;chapter TBD&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://home.ku.edu.tr/~mbaker/CSHS503/FoucaultHistorySex.pdf&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+
+  &lt;/ul&gt;
+
+&lt;/section&gt;
+
+&lt;section class=&quot;session&quot;&gt;
+  &lt;div class=&quot;counter&quot;&gt;&lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;title&quot;&gt;The Dialect of Sex: The Case for a Feminist Revolution
+    by Shulamith Firestone&lt;/li&gt;
+    &lt;li class=&quot;meeting&quot;&gt;Thursday October 25th 2017, 7-9pm&lt;/li&gt;
+    &lt;li class=&quot;place&quot;&gt;June Bar&lt;/li&gt;
+    &lt;li&gt;Last chapter&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://teoriaevolutiva.files.wordpress.com/2013/10/firestone-shulamith-dialectic-sex-case-feminist-revolution.pdf&quot;&gt;download PDF&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;</content><author><name></name></author><summary type="html">The Dialect of Sex: The Case for a Feminist Revolution by Shulamith Firestone Thursday August 10th 2017, 7-9pm Bluestockings Bookstore</summary></entry><entry><title type="html">mastodon</title><link href="http://localhost:4000/tools/mastodon/" rel="alternate" type="text/html" title="mastodon" /><published>2019-01-21T18:03:16-05:00</published><updated>2019-01-21T18:03:16-05:00</updated><id>http://localhost:4000/tools/mastodon</id><content type="html" xml:base="http://localhost:4000/tools/mastodon/">&lt;h1&gt;pending&lt;/h1&gt;</content><author><name></name></author><summary type="html">pending</summary></entry><entry><title type="html">scuttlebutt</title><link href="http://localhost:4000/tools/scuttlebutt/" rel="alternate" type="text/html" title="scuttlebutt" /><published>2019-01-21T18:03:16-05:00</published><updated>2019-01-21T18:03:16-05:00</updated><id>http://localhost:4000/tools/scuttlebutt</id><content type="html" xml:base="http://localhost:4000/tools/scuttlebutt/"></content><author><name></name></author></entry><entry><title type="html">lyndsey</title><link href="http://localhost:4000/about/lyndsey/" rel="alternate" type="text/html" title="lyndsey" /><published>2019-01-21T18:03:16-05:00</published><updated>2019-01-21T18:03:16-05:00</updated><id>http://localhost:4000/about/lyndsey</id><content type="html" xml:base="http://localhost:4000/about/lyndsey/"></content><author><name></name></author></entry></feed>
