@@ -5,14 +5,14 @@ $font: (
   );
 $size: (
   pattern: 20px,
-margin: 30px,
-container: 900px,
-collapse: 60px,
-counter: 50px,
-image: 150px,
-soon: -60px,
-bp: 768px,
-aside: 150px
+  margin: 30px,
+  container: 900px,
+  collapse: 60px,
+  counter: 50px,
+  image: 150px,
+  soon: -60px,
+  bp: 768px,
+  aside: 150px
   );
 
 $font-size: (
@@ -40,21 +40,21 @@ $color: (
 $delay: 150ms;
 
 @mixin highlight($bg: bg, $padding: 3px, $break: true) {
-        background-color: map-get($color, $bg);
-      display: inline;
-      padding: $padding 0;
-      @if $break == true {
-           &:after {
-        content: "";
-        display: block;
-      }
-      }
+  background-color: map-get($color, $bg);
+  display: inline;
+  padding: $padding 0;
+  @if $break == true {
+   &:after {
+    content: "";
+    display: block;
+  }
+}
 
 }
 
 @mixin zebra {
   color: map-get($color, fg);
   &:nth-of-type(2n) {
-color: map-get($color, brand);
+    color: map-get($color, brand);
   }
 }
